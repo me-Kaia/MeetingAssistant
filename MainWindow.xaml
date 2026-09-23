@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="开始录音" HorizontalAlignment="Left" Margin="104,140,0,0" VerticalAlignment="Top" Height="55" Width="162"/>
+        <Button Content="开始录音" HorizontalAlignment="Left" Margin="104,140,0,0" VerticalAlignment="Top" Height="55" Width="162" x:Name="RecordButton"  Click="Button_Click" />
         <TextBox HorizontalAlignment="Left" Margin="104,42,0,0" TextWrapping="Wrap" Text="AI Meeting Assistant" VerticalAlignment="Top" Width="162" Height="48"/>
-        <TextBox HorizontalAlignment="Left" Margin="104,312,0,0" TextWrapping="Wrap" Text="今日会议内容：" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="104,368,0,0" TextWrapping="Wrap" Text="AI总结" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MeetingContentBox"  HorizontalAlignment="Left" Margin="104,279,0,0" TextWrapping="Wrap" Text="今日会议内容：" VerticalAlignment="Top" Width="673" Height="50"/>
+        <TextBox  x:Name="SummaryBox" HorizontalAlignment="Left" Margin="104,368,0,0" TextWrapping="Wrap" Text="AI总结" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
